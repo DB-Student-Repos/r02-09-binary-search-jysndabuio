@@ -1,5 +1,4 @@
 pub fn find(array: &[i32], key: i32) -> Option<usize> {
-    unimplemented!(
-        "Using the binary search algorithm, find the element '{key}' in the array '{array:?}' and return its index."
-    );
+    // All array in the test file are sorted.
+    array.binary_search(&key).ok()
 }
